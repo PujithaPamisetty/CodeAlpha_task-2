@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+    }
+    .container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow:1px 1px black;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    }
+    h1 {
+    text-align: center;
+    }
+    #add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; }
+    #add-task input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    }
+    #add-button,
+    #reset-page-button {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: rgb(255, 192, 203);
+        color: #121212;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    #add-button:hover,
+    #reset-page-button:hover {
+        background-color: rgb(255, 192, 203);
+        box-shadow: 0 0 20px rgb(255, 192, 203);
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+    .task-deadline {
+        font-size: 14px;
+        color: #1d1c1c;
+    }
+    .complete-button,
+    .delete-button {
+        padding: 4px 8px;
+        font-size: 14px;
+        border: none;
+        border-radius:3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .complete-button {
+        background-color: rgb(255, 192, 203);
+        color: #121212;
+    }
+    .delete-button {
+        background-color: #ff0033;
+        color: #fff;
+    }
+    .complete-button:hover, .delete-button:hover {
+        opacity: 0.8;
+    }
+    .progress-bar {
+        height: 20px;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+    #progress-bar-inner {
+        height: 100%;
+        background-color: #90ee90;
+        transition: width 0.3s;
+    }
